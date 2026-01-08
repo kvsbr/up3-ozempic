@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡ESPERA! TU PEDIDO NO ESTÁ COMPLETO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- BARRA DE STATUS / PROGRESSO -->
+    <div class="w-full bg-black text-white py-3 text-center text-xs md:text-sm font-bold tracking-widest uppercase sticky top-0 z-50">
+        <span class="text-green-400">PASO 3 DE 3:</span> PERSONALIZANDO TU ACCESO...
+    </div>
+
+    <!-- HEADER VERMELHO FULL WIDTH -->
+    <header class="w-full bg-red-600 p-6 text-center shadow-md">
+        <h1 class="text-2xl md:text-4xl font-black text-white leading-tight uppercase">
+            ✋ ¡ESPERA! ¡NO CIERRES ESTO!
+        </h1>
+        <p class="text-white/90 text-base md:text-lg mt-2 font-medium">
+            Tu inscripción en <span class="underline">Adiós Gluten</span> fue confirmada, pero...
+        </p>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (SEM BORDA, OCUPANDO A PÁGINA) -->
+    <main class="w-full max-w-3xl mx-auto px-4 py-8 md:py-12 text-center">
+            
+        <h2 class="text-xl md:text-3xl font-bold text-gray-800 mb-8 leading-snug">
+            ¿Olvidaste agregar el acelerador <br>
+            <span class="bg-yellow-200 px-2 text-black mt-2 inline-block">"Protocolo Bariátrico de Gelatina"</span> a tu pedido?
+        </h2>
+
+        <!-- ÁREA DO VSL (LARGURA MAIOR) -->
+        <div class="mb-8 w-full bg-black rounded-xl overflow-hidden shadow-2xl">
+            <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe 
+                    src="player.html" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture" 
+                    allowfullscreen 
+                    title="Player VSL">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- ESPAÇO PARA O WIDGET DE 1 CLIQUE DA HOTMART -->
+        <div class="my-6 max-w-xl mx-auto">
+            
+            <div class="border-4 border-dashed border-green-500 bg-green-50 rounded-xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
+                <p class="text-green-700 font-bold text-sm uppercase mb-2 tracking-wider">Oferta Exclusiva de Un Solo Clic</p>
+                <p class="text-lg font-bold text-gray-800">[PEGA TU WIDGET DE HOTMART AQUÍ]</p>
+            </div>
+
+            <!-- Garantias -->
+            <div class="text-sm text-gray-500 flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+                <span class="flex items-center gap-2"><i data-lucide="lock" class="w-4 h-4 text-green-600"></i> Pago Seguro</span>
+                <span class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-green-600"></i> Acceso Inmediato</span>
+                <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i> Garantía Total</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="text-center text-gray-400 text-xs py-8 border-t border-gray-100 mt-8">
+        <p>Copyright © 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
